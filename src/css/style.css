@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+:root {
+     --corPadrao: rgb(75, 248, 6);
+}
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     /* outline: auto; */
+}
+
+body {
+     min-height: 100vh;
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: rgb(2, 14, 0);
+     background-size: cover;
+     background-position: center center;
+}
+     /* HEADER */
+header {
+     width: 100%;
+     height: 150px;
+     justify-content: space-between;
+     display: flex;
+     background-color: black;
+}
+
+header > div.parteSemLogo {
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     padding-left: 20%;
+     color: var(--corPadrao);
+}
+
+header > div.parteSemLogo nav {
+     display: flex;
+     width: auto;
+     text-align: center;
+     justify-content: space-around;
+     gap: 20px;
+}
+
+header > div.parteSemLogo > nav > a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     font-size: 1.5em;
+     color: var(--corPadrao);
+     transition: 0.4s;
+}
+
+header > div.parteSemLogo > nav > a:hover {
+     text-decoration: underline;
+     font-size: 1.7em;
+}
+
+header > button {
+     border: none;
+     background: none;
+     font-size: 2em;
+     padding: 0 15px;
+     color: var(--corPadrao);
+     cursor: pointer;
+}
+
+     /* MAIN */
+main {
+     display: flex;
+     flex-direction: column;
+     padding: 50px 20px 0 20px;
+     width: 70%;
+     background-color: black;
+     color: white;
+     flex: 1;
+     box-shadow: 0px 1px 16px 20px #0000003d;
+     box-shadow: inset 0px 20px 20px 0px rgba(75, 248, 6, 0.199);
+}
+
+main p {
+     font-size: 1.2em;
+}
+
+     /* SECTION PRESENTATION-ME */
+section#presentationMe {
+     display: flex;
+     min-height: 250px;
+     padding: 50px;
+}
+
+section#presentationMe > picture {
+     display: flex;
+     flex: 1;
+     justify-content: flex-end;
+     align-items: center;
+}
+
+section#presentationMe > picture > img{
+     height: 20vw;
+     border-radius: 10px;
+     box-shadow: 0px 0px 20px 1px rgb(59 255 0 / 56%);
+}
+
+article#textAboutMe {
+     width: 50%;
+}
+
+     /* SECTION MY-PROJETCTS */
+section#myProjects {
+     margin: 40px 0;
+     padding: 0 30px;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+}
+     /* PROJECTS*/
+section.projetoTal {
+     min-height: 300px;
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+}
+
+section.projetoTal > picture {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     width: 300px;
+
+}
+
+section.projetoTal > picture > img {
+     height: 300px;
+     width: 300px;
+     border: 2px solid var(--corPadrao);
+}
+
+article.sobreOProjeto {
+     width: 65%;
+}
+
+     /* FOOTER */
+footer {
+     width: 100%;  
+     height: 200px;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: column;
+     color: white;
+}
+
+footer > #criadoPor {
+     display: flex;
+     height: 50%;
+     justify-content: center;
+     align-items: center;
+     background-color: black;
+     
+     flex: 1;
+}
+
+footer > #redesSociais {
+     background-color: #020202;
+     display: flex;
+     align-items: center;
+     height: 60px;
+     padding: 5px;
+     gap: 15px;
+     justify-content: center;
+}
+
+footer > #redesSociais > a > i{
+     font-size: 40px;
+     color: var(--corPadrao);
+}
+
+     /* PARÁGRAFOS E TÍTULOS */
+article > h1 {
+     color: var(--corPadrao);
+}
+
+article > p {
+     font-size: 1.5em;
+     text-align: justify;
+} 
+
+footer > p {
+     font-size: 2em;
+     font-weight: bold;
+}
