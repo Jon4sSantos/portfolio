@@ -67,6 +67,7 @@ header > button {
      border: none;
      background: none;
      font-size: 2em;
+     margin-right: 40px;
      padding: 0 15px;
      color: var(--corPadrao);
      cursor: pointer;
@@ -94,11 +95,11 @@ section#presentationMe {
      display: flex;
      min-height: 250px;
      padding: 50px;
+     justify-content: space-evenly;
 }
 
 section#presentationMe > picture {
      display: flex;
-     flex: 1;
      justify-content: flex-end;
      align-items: center;
 }
@@ -134,7 +135,6 @@ section.projetoTal > picture {
      justify-content: center;
      align-items: flex-start;
      width: 300px;
-
 }
 
 section.projetoTal > picture > img {
@@ -195,4 +195,91 @@ article > p {
 footer > p {
      font-size: 2em;
      font-weight: bold;
+}
+
+@media screen and (max-width: 1155px) {
+               /* SECTION PRESENTATION-ME */
+     section#presentationMe {
+          display: flex;
+          height: auto;
+          padding: 20px;
+          justify-content: space-evenly;
+     }
+
+     section#presentationMe > picture {
+          display: none;
+     }
+
+     section#presentationMe > picture > img{
+          display: none;
+     }
+
+     article#textAboutMe {
+     width: 50vw;
+     }
+
+     article#textAboutMe > h1 {
+     text-align: center;
+     padding-bottom: 10px;
+     }
+
+     article#textAboutMe > p {
+          text-align: justify;
+     }
+}
+
+@media screen and (max-width: 1002px) {
+
+     main {
+          width: 70vw;
+          min-width: 400px;
+     }
+               /* SECTION MY-PROJETCTS */
+     section#myProjects {
+          margin: 40px 0;
+          padding: 0 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+     }
+          /* PROJECTS*/
+     section.projetoTal {
+          min-height: 300px;
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          width: 100%;
+     }
+
+     section.projetoTal > picture {
+          display: none;
+          /* justify-content: center;
+          align-items: flex-start;
+          width: 300px; */
+     }
+
+     /* section.projetoTal > picture > img {
+          height: 300px;
+          width: 300px;
+          border: 2px solid var(--corPadrao);
+     } */
+
+     article.sobreOProjeto {
+          width: 100%;
+     }
+     
+     article.sobreOProjeto > h1 {
+          padding-bottom: 15px;
+     }
+
+     article.sobreOProjeto > p {
+          text-align: justify;
+     }
+}
+
+@media screen and (max-width: 500px) {
+
+     header > div.parteSemLogo nav { 
+          display: none; 
+     }
 }
