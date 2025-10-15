@@ -2,6 +2,7 @@
 
 :root {
      --corPadrao: rgb(75, 248, 6);
+     --fontPadrao: Arial, Helvetica, sans-serif;
 }
 
 /* MOBILE FIRST*/
@@ -10,5 +11,157 @@
      box-sizing: border-box;
      margin: 0;
      padding: 0;
+     font-family: var(--fontPadrao);
      /* outline: auto; */
+}
+
+hr {
+     color: greenyellow;
+}
+
+body {
+     background-image: url(../Assets/background001.jpg);
+     background-size: cover;
+     background-position: center right;
+     background-color: yellow;
+}
+
+header {
+     display: flex;
+     background-color: blue;
+     justify-content: space-between;
+     
+}
+
+header > div#sembotao {
+     background-color: red;
+     width: 100vw;
+     text-align: center;
+     padding-left: 10px;
+}
+
+header > div#sembotao > nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: yellow;
+     height: 40px;
+     gap: 10px;
+}
+
+header > div#sembotao > nav > a{
+     text-decoration: none;
+     color: black;
+     background-color: pink;
+     padding: 5px;
+     border-radius: 3px;
+}
+
+header > button {
+     width: 35px;
+     height: 40px;
+     border-radius: 5px;
+}
+
+main {
+     background-color: green;
+}
+
+main > section#presentationMe {
+     display: flex;
+     background-color: aqua;
+}
+
+main > section#presentationMe > article#textAboutMe {
+     background-color: palevioletred;
+     padding: 10px;
+}
+
+main > section#presentationMe > article#textAboutMe > h1 {
+     font-size: 1.5em;
+     padding-bottom: 10px;
+}
+
+main > section#presentationMe > article#textAboutMe > p {
+     text-align: justify;
+}
+
+main > section#presentationMe > picture {
+     display: flex;
+}
+
+main > section#presentationMe > picture > img {
+
+     width: 200px;
+     height: 250px;
+}
+
+main > section#myProjects {
+     flex-direction: column;
+     background-color: brown;
+     padding: 10px;
+}
+
+main > section#myProjects > section.projetoTal {
+     display: flex;
+     background-color: darkorange;
+     margin-bottom: 10px;
+}
+
+main > section#myProjects > section.projetoTal > picture {
+     display: flex;
+}
+
+main > section#myProjects > section.projetoTal > picture > img {
+     width: 200px;
+     height: 200px;
+}
+
+main > section#myProjects > section.projetoTal > article.sobreOProjeto {
+     background-color: yellowgreen;
+}
+
+main > section#myProjects > section.projetoTal > article.sobreOProjeto > h1 {
+     padding-bottom: 5px;
+}
+
+main > section#myProjects > section.projetoTal > article.sobreOProjeto > p {
+     text-align: justify;
+}
+
+footer {
+     background-color: black;
+}
+
+footer > div#criadoPor {
+     display: flex;
+     height: 80px;
+     justify-content: center;
+     align-items: flex-end;
+     padding-bottom: 15px;
+}
+
+footer > div#criadoPor > p {
+     color: white;
+     font-size: 1.5em;
+}
+
+footer > div#redesSociais {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 60px;
+     gap: 10px;
+}
+
+footer > div#redesSociais > a {
+     font-size: 1.2em;
+     color: white;
+     text-decoration: none;
+
+}
+
+footer > div#redesSociais > a > i {
+     font-size: 1.4em;
+     color: var(--corPadrao);
 }
