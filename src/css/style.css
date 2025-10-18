@@ -89,64 +89,66 @@ main {
      color: var(--corPadrao);
 }
 
-main > section#presentationMe {
+section#presentationMe {
      display: flex;
+     flex-flow: row wrap-reverse;
 }
 
-main > section#presentationMe > article#textAboutMe {
+section#presentationMe > article#textAboutMe {
      padding: 10px;
 }
 
-main > section#presentationMe > article#textAboutMe > h1 {
+section#presentationMe > article#textAboutMe > h1 {
      font-size: 1.5em;
      padding-bottom: 10px;
 }
 
-main > section#presentationMe > article#textAboutMe > p {
+section#presentationMe > article#textAboutMe > p {
      text-align: justify;
 }
 
-main > section#presentationMe > picture {
+section#presentationMe > picture {
      display: flex;
 }
 
-main > section#presentationMe > picture > img {
+section#presentationMe > picture > img {
 
      width: 200px;
      height: 250px;
 }
 
-main > section#myProjects {
+section#myProjects {
      flex-direction: column;
      padding: 10px;
 }
 
-main > section#myProjects > section.projetoTal {
+section#myProjects > section.projetoTal {
      display: flex;
      margin-bottom: 10px;
+     flex-flow: row wrap;
 }
 
-main > section#myProjects > section.projetoTal > picture {
+section#myProjects > section.projetoTal > picture {
      display: flex;
 }
 
-main > section#myProjects > section.projetoTal > picture > img {
+section#myProjects > section.projetoTal > picture > img {
      width: 200px;
      height: 200px;
      border-radius: 5px;
 }
 
-main > section#myProjects > section.projetoTal > article.sobreOProjeto {
+section#myProjects > section.projetoTal > article.sobreOProjeto {
      yellowgreen;
      padding: 5px;
 }
 
-main > section#myProjects > section.projetoTal > article.sobreOProjeto > h1 {
+section#myProjects > section.projetoTal > article.sobreOProjeto > h1 {
      padding-bottom: 5px;
      text-align: center;
 }
 
-main > section#myProjects > section.projetoTal > article.sobreOProjeto > p {
+section#myProjects > section.projetoTal > article.sobreOProjeto > p {
      text-align: justify;
 }
 
