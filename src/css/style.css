@@ -114,7 +114,11 @@ section#presentationMe > picture > img {
 
 section#myProjects {
      flex-direction: column;
-     padding: 10px;
+     padding: 20px;
+}
+
+section#myProjects > h1 {
+     text-align: center;
 }
 
 section#myProjects > section.projetoImpar, section#myProjects > section.projetoPar  {
