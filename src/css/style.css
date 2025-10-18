@@ -5,11 +5,23 @@
      --fontPadrao: Arial, Helvetica, sans-serif;
 }
 
-/* MOBILE FIRST*/
+/* MOBILE FIRST
+
+     Telas Menores: 465px;
+*/
+
+
 
 * {
      box-sizing: border-box;
-     margin: 0;
+     margin: 0;header > div#sembotao > nav > a{
+     text-decoration: none;
+     color: black;
+     pink;
+     padding: 5px;
+     border-radius: 3px;
+     font-weight: bold;
+}
      padding: 0;
      font-family: var(--fontPadrao);
      /* outline: auto; */
@@ -23,57 +35,65 @@ body {
      background-image: url(../Assets/background001.jpg);
      background-size: cover;
      background-position: center right;
-     background-color: yellow;
 }
 
 header {
      display: flex;
-     background-color: blue;
+     background-color: black;
      justify-content: space-between;
-     
+     align-items: center;
 }
 
 header > div#sembotao {
-     background-color: red;
      width: 100vw;
      text-align: center;
      padding-left: 10px;
+     color: var(--corPadrao);
 }
 
 header > div#sembotao > nav {
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: yellow;
+     yellow;
      height: 40px;
      gap: 10px;
 }
 
 header > div#sembotao > nav > a{
      text-decoration: none;
-     color: black;
-     background-color: pink;
+     color: var(--corPadrao);
+     chocolate;
      padding: 5px;
      border-radius: 3px;
+     font-weight: bold;
+}
+
+header  > p{
+     color: var(--corPadrao);
+     margin-left: 
+     10px;
 }
 
 header > button {
      width: 35px;
      height: 40px;
      border-radius: 5px;
+     border: none;
+     font-size: 1.8em;
+     color: var(--corPadrao);
 }
 
 main {
-     background-color: green;
+     background-color: black;
+     color: var(--corPadrao);
 }
 
 main > section#presentationMe {
      display: flex;
-     background-color: aqua;
 }
 
 main > section#presentationMe > article#textAboutMe {
-     background-color: palevioletred;
      padding: 10px;
 }
 
@@ -98,13 +118,11 @@ main > section#presentationMe > picture > img {
 
 main > section#myProjects {
      flex-direction: column;
-     background-color: brown;
      padding: 10px;
 }
 
 main > section#myProjects > section.projetoTal {
      display: flex;
-     background-color: darkorange;
      margin-bottom: 10px;
 }
 
@@ -115,14 +133,17 @@ main > section#myProjects > section.projetoTal > picture {
 main > section#myProjects > section.projetoTal > picture > img {
      width: 200px;
      height: 200px;
+     border-radius: 5px;
 }
 
 main > section#myProjects > section.projetoTal > article.sobreOProjeto {
-     background-color: yellowgreen;
+     yellowgreen;
+     padding: 5px;
 }
 
 main > section#myProjects > section.projetoTal > article.sobreOProjeto > h1 {
      padding-bottom: 5px;
+     text-align: center;
 }
 
 main > section#myProjects > section.projetoTal > article.sobreOProjeto > p {
