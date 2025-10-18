@@ -14,21 +14,9 @@
 
 * {
      box-sizing: border-box;
-     margin: 0;header > div#sembotao > nav > a{
-     text-decoration: none;
-     color: black;
-     pink;
-     padding: 5px;
-     border-radius: 3px;
-     font-weight: bold;
-}
+     margin: 0;
      padding: 0;
      font-family: var(--fontPadrao);
-     /* outline: auto; */
-}
-
-hr {
-     color: greenyellow;
 }
 
 body {
@@ -52,10 +40,9 @@ header > div#sembotao {
 }
 
 header > div#sembotao > nav {
-     display: flex;
+     display: none;
      justify-content: center;
      align-items: center;
-     yellow;
      height: 40px;
      gap: 10px;
 }
@@ -63,7 +50,6 @@ header > div#sembotao > nav {
 header > div#sembotao > nav > a{
      text-decoration: none;
      color: var(--corPadrao);
-     chocolate;
      padding: 5px;
      border-radius: 3px;
      font-weight: bold;
@@ -87,11 +73,19 @@ header > button {
 main {
      background-color: black;
      color: var(--corPadrao);
+     padding: 10px 0;
+}
+
+main p {
+     font-family:monospace;
+     font-size: 1.5em;
 }
 
 section#presentationMe {
      display: flex;
      flex-flow: row wrap-reverse;
+     justify-content: center;
+     padding: 10px;
 }
 
 section#presentationMe > article#textAboutMe {
@@ -101,6 +95,7 @@ section#presentationMe > article#textAboutMe {
 section#presentationMe > article#textAboutMe > h1 {
      font-size: 1.5em;
      padding-bottom: 10px;
+     text-align: center;
 }
 
 section#presentationMe > article#textAboutMe > p {
@@ -112,9 +107,9 @@ section#presentationMe > picture {
 }
 
 section#presentationMe > picture > img {
-
      width: 200px;
      height: 250px;
+     border-radius: 5px;
 }
 
 section#myProjects {
@@ -136,8 +131,8 @@ section#myProjects > section.projetoImpar > picture, section#myProjects > sectio
 }
 
 section#myProjects > section.projetoImpar > picture > img, section#myProjects > section.projetoPar > picture > img {
-     width: 200px;
-     height: 200px;
+     width: 300px;
+     height: 300px;
      border-radius: 5px;
 }
 

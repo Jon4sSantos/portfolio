@@ -1,0 +1,31 @@
+header > div#sembotao > nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 40px;
+     gap: 10px;
+}
+
+header > div#sembotao > nav > a{
+     text-decoration: none;
+     color: var(--corPadrao);
+     padding: 5px;
+     border-radius: 3px;
+     font-weight: bold;
+}
+
+main {
+     max-width: 90vw;
+     margin: auto;
+     border-radius: 10px;
+}
+
+section#presentationMe > article#textAboutMe {
+     width: 90%;
+     padding: 10px;
+}
+
+section#presentationMe > picture > img {
+     width: 300px;
+     height: 350px;
+}
